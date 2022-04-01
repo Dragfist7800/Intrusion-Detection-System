@@ -1,0 +1,6 @@
+# Intrusion-Detection-System
+This is a system for detecting home intrusion .
+
+## System Operations
+Initially Images are captured using CCTV camera connected to the Raspberry pi, then the images from the Raspberry pi will be sent to an AWS Windows VM (capturing and sending images from linux to windows is done through a bash script). 
+The VM itself has UiPath studio running with the necessary python ML models. Each image being captured will be sent to the VM running UiPath for movement and object detection. It is necessary to train the faces of the householders for the model to classify them as safe, additionally it can also identify animals and birds if the customer wishes, so there is no gap for false alerts. If an unregistered face is detected, it tries to take images of their face and sends an e-mail to the owner of the household for further confirmation. If the owner identifies them as an intruder, the bot provides options to contact emergency numbers or police directly and can inform about the incident.
