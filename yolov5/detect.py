@@ -156,12 +156,12 @@ def run(
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
-                    LOGGER.info(f'c is here *****{c}')
+                    #LOGGER.info(f'c is here *****{c} {det}')
                     
                 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
-                    LOGGER.info(f'here -------------------------{xyxy}')
+                    #LOGGER.info(f'here -------------------------{xyxy}')
                     if save_txt:  # Write to file
                         xywh = (xyxy2xywh(torch.tensor(xyxy).view(1, 4)) / gn).view(-1).tolist()  # normalized xywh
                         line = (cls, *xywh, conf) if save_conf else (cls, *xywh)  # label format
