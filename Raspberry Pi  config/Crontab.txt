@@ -28,15 +28,125 @@
 
 
 * * * * * root /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 1 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 2 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 3 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 4 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 5 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 6 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 7 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 8 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 9 ; /home/pi/capture.sh >/dev/null 2>&1
 * * * * * root sleep 10 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 11 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 12 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 13 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 14 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 15 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 16 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 17 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 18 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 19 ; /home/pi/capture.sh >/dev/null 2>&1
 * * * * * root sleep 20 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 21 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 22 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 23 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 24 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 25 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 26 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 27 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 28 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 29 ; /home/pi/capture.sh >/dev/null 2>&1
 * * * * * root sleep 30 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 31 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 32 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 33 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 34 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 35 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 36 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 37 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 38 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 39 ; /home/pi/capture.sh >/dev/null 2>&1
 * * * * * root sleep 40 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 41 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 42 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 43 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 44 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 45 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 46 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 47 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 48 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 49 ; /home/pi/capture.sh >/dev/null 2>&1
 * * * * * root sleep 50 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 51 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 52 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 53 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 54 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 55 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 56 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 57 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 58 ; /home/pi/capture.sh >/dev/null 2>&1
+* * * * * root sleep 59 ; /home/pi/capture.sh >/dev/null 2>&1
+
+
 
 * * * * * root /home/pi/scp.sh
+* * * * * root sleep 1 ; /home/pi/scp.sh
+* * * * * root sleep 2 ; /home/pi/scp.sh
+* * * * * root sleep 3 ; /home/pi/scp.sh
+* * * * * root sleep 4 ; //home/pi/scp.sh
+* * * * * root sleep 5 ; /home/pi/scp.sh
+* * * * * root sleep 6 ; /home/pi/scp.sh
+* * * * * root sleep 7 ; /home/pi/scp.sh
+* * * * * root sleep 8 ; /home/pi/scp.sh
+* * * * * root sleep 9 ; /home/pi/scp.sh
 * * * * * root sleep 10 ; /home/pi/scp.sh
+* * * * * root sleep 11 ; /home/pi/scp.sh
+* * * * * root sleep 12 ; /home/pi/scp.sh
+* * * * * root sleep 13 ; /home/pi/scp.sh
+* * * * * root sleep 14 ; /home/pi/scp.sh
+* * * * * root sleep 15 ; /home/pi/scp.sh
+* * * * * root sleep 16 ; /home/pi/scp.sh
+* * * * * root sleep 17 ; /home/pi/scp.sh
+* * * * * root sleep 18 ; /home/pi/scp.sh
+* * * * * root sleep 19 ; /home/pi/scp.sh
 * * * * * root sleep 20 ; /home/pi/scp.sh
+* * * * * root sleep 21 ; /home/pi/scp.sh
+* * * * * root sleep 22 ; /home/pi/scp.sh
+* * * * * root sleep 23 ; /home/pi/scp.sh
+* * * * * root sleep 24 ; /home/pi/scp.sh
+* * * * * root sleep 25 ; /home/pi/scp.sh
+* * * * * root sleep 26 ; /home/pi/scp.sh
+* * * * * root sleep 27 ; /home/pi/scp.sh
+* * * * * root sleep 28 ; /home/pi/scp.sh
+* * * * * root sleep 29 ; /home/pi/scp.sh
 * * * * * root sleep 30 ; /home/pi/scp.sh
-* * * * * root sleep 40 ; //home/pi/scp.sh
+* * * * * root sleep 31 ; /home/pi/scp.sh
+* * * * * root sleep 32 ; /home/pi/scp.sh
+* * * * * root sleep 33 ; /home/pi/scp.sh
+* * * * * root sleep 34 ; /home/pi/scp.sh
+* * * * * root sleep 35 ; /home/pi/scp.sh
+* * * * * root sleep 36 ; /home/pi/scp.sh
+* * * * * root sleep 37 ; /home/pi/scp.sh
+* * * * * root sleep 38 ; /home/pi/scp.sh
+* * * * * root sleep 39 ; /home/pi/scp.sh
+* * * * * root sleep 40 ; /home/pi/scp.sh
+* * * * * root sleep 41 ; /home/pi/scp.sh
+* * * * * root sleep 42 ; /home/pi/scp.sh
+* * * * * root sleep 43 ; /home/pi/scp.sh
+* * * * * root sleep 44 ; /home/pi/scp.sh
+* * * * * root sleep 45 ; /home/pi/scp.sh
+* * * * * root sleep 46 ; /home/pi/scp.sh
+* * * * * root sleep 47 ; /home/pi/scp.sh
+* * * * * root sleep 48 ; /home/pi/scp.sh
+* * * * * root sleep 49 ; /home/pi/scp.sh
 * * * * * root sleep 50 ; /home/pi/scp.sh
+* * * * * root sleep 51 ; /home/pi/scp.sh
+* * * * * root sleep 52 ; /home/pi/scp.sh
+* * * * * root sleep 53 ; /home/pi/scp.sh
+* * * * * root sleep 54 ; /home/pi/scp.sh
+* * * * * root sleep 55 ; /home/pi/scp.sh
+* * * * * root sleep 56 ; /home/pi/scp.sh
+* * * * * root sleep 57 ; /home/pi/scp.sh
+* * * * * root sleep 58 ; /home/pi/scp.sh
+* * * * * root sleep 59 ; /home/pi/scp.sh
