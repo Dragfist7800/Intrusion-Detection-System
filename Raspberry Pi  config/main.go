@@ -1,4 +1,5 @@
 // main.go
+// This program is to convert raspberry pi into a server
 package main
 
 import (
