@@ -38,6 +38,6 @@ face_recognition
 cmake for face-recognition download the .msi file and install with path set. Use this link to download https://cmake.org/download/
 
 ### Raspberry pi requirements -------------------
-fswebcam
-Ngrok
-Golang
+fswebcam,
+Ngrok,
+Golang,
