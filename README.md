@@ -8,36 +8,35 @@ The VM itself has UiPath studio running with the necessary python ML models. Eac
 
 ## Hardware and Software requirements
 ### Hardware:
-Rasperry pi
-cctv camera
+Rasperry pi<br />
+cctv camera<br />
 
 ### Software:
 ### Base ----------------------------------------
-matplotlib>=3.2.2
-numpy>=1.18.5
-opencv-python>=4.1.2
-Pillow>=7.1.2
-PyYAML>=5.3.1
-requests>=2.23.0
-scipy>=1.4.1
-torch>=1.7.0
-torchvision>=0.8.1
-tqdm>=4.41.0
+matplotlib>=3.2.2,<br />
+numpy>=1.18.5,<br />
+opencv-python>=4.1.2,<br />
+Pillow>=7.1.2,<br />
+PyYAML>=5.3.1,<br />
+requests>=2.23.0,<br />
+scipy>=1.4.1,<br />
+torch>=1.7.0,<br />
+torchvision>=0.8.1,<br />
+tqdm>=4.41.0,<br />
 
 ### Logging -------------------------------------
-tensorboard>=2.4.1
-### wandb
+tensorboard>=2.4.1,<br />
 
 ### Plotting ------------------------------------
-pandas>=1.1.4
-seaborn>=0.11.0
+pandas>=1.1.4,<br />
+seaborn>=0.11.0,<br />
 
 ### Face-recognition ----------------------------
-dlib
-face_recognition
-cmake for face-recognition download the .msi file and install with path set. Use this link to download https://cmake.org/download/
+dlib,<br />
+face_recognition,<br />
+cmake for face-recognition download the .msi file and install with path set. Use this link to download https://cmake.org/download/,<br />
 
 ### Raspberry pi requirements -------------------
-fswebcam,
-Ngrok,
-Golang,
+fswebcam,<br />
+Ngrok,<br />
+Golang,<br />
