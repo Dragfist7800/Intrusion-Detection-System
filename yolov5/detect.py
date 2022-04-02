@@ -20,7 +20,7 @@ from utils.general import (LOGGER, check_file, check_img_size, check_imshow, che
 from utils.plots import Annotator, colors, save_one_box
 from utils.torch_utils import select_device, time_sync
 
-
+    
 @torch.no_grad()
 def run(
         weights=ROOT / 'yolov5s.pt',  # model.pt path(s)
@@ -50,6 +50,7 @@ def run(
         half=False,  # use FP16 half-precision inference
         dnn=False,  # use OpenCV DNN for ONNX inference
 ):
+    
     source = str(source)
     save_img = not nosave and not source.endswith('.txt')  # save inference images
     is_file = Path(source).suffix[1:] in (IMG_FORMATS + VID_FORMATS)
@@ -125,16 +126,21 @@ def run(
                 # Rescale boxes from img_size to im0 size
                 det[:, :4] = scale_coords(im.shape[2:], det[:, :4], im0.shape).round()
                 
-                sample_list = []
+                #sample_list = []
 
                 # Print results
                 for c in det[:, -1].unique():
                     n = (det[:, -1] == c).sum()  # detections per class
                     s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
                     #LOGGER.info(f'c is here *****{c} {det}')
-                    
                 
+                #List of animals that can be found near home    
+                animals = [341,92,139,295]
                 # Write results
+                global check_animal
+                check_animal = 0
+                global check_human
+                check_human = 0
                 for *xyxy, conf, cls in reversed(det):
                     #LOGGER.info(f'here -------------------------{xyxy}')
                     if save_txt:  # Write to file
@@ -147,6 +153,13 @@ def run(
 
                     if save_img or save_crop or view_img:  # Add bbox to image
                         c = int(cls)  # integer class
+                        # the intger class for human is 0 
+                        if c == 0:
+                            check_human = 1
+                            print("Human")
+                        # will check for the integer values of the animals
+                        if c in animals:
+                            check_animal = 1
                         label = None if hide_labels else (names[c] if hide_conf else f'{names[c]} {conf:.2f}')
                         annotator.box_label(xyxy, label, color=colors(c, True))
                         if save_crop:
@@ -232,5 +245,27 @@ def main(opt):
 def detect_movement():
     opt = parse_opt()
     main(opt)
-   
-detect_movement()
+
+def ping(hostName):
+    response = os. system("ping -c 1 " + hostName)#pinging for response
+    if response != 0:
+        print(response)
+        print(hostName, 'is down')
+        return "4"
+           
+def object_detection(isboth,hostName):
+    ping(hostName)
+    global check_human
+    global check_animal
+    detect_movement()
+    print("they are: "+str(check_human))
+    if check_human == 1:
+        check_human = 0
+        return "1"
+    if check_animal == 1:
+        check_animal = 0
+        print("3")
+        return "3"
+    
+
+#object_detection("no","8.8.8.8")
